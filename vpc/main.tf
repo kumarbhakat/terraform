@@ -94,5 +94,3 @@ resource "aws_security_group" "tf_public_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
-
-

@@ -1,4 +1,8 @@
 #----networking/main.tf----
+provider "aws" {
+  version = "~> 2.0"
+  region     = var.region
+}
 
 data "aws_availability_zones" "available" {
 }
@@ -90,4 +94,5 @@ resource "aws_security_group" "tf_public_sg" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
+
 

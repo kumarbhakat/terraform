@@ -1,3 +1,5 @@
+region  = "us-east-1"
+
 vpc_cidr     = "10.123.0.0/16"
 public_cidrs = [
   "10.123.1.0/24",
